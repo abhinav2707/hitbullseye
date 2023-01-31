@@ -1,0 +1,27 @@
+<!DOCTYPE Html>
+<Html Lang="En" Dir="Ltr">
+  <Head>
+    <Meta Charset="Utf-8" />
+    <Title>Guess A Word Game JavaScript</Title>
+    <Link Rel="Stylesheet" Href="Style.Css" />
+    <Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0" />
+  </Head>
+  <Body>
+    <Div Class="Wrapper">
+      <H1>Guess The Word</H1>
+      <Div Class="Content">
+        <Input Type="Text" Class="Typing-Input" Maxlength="1" />
+        <Div Class="Inputs"></Div>
+        <Div Class="Details">
+          <P Class="Hint">Hint: <Span></Span></P>
+          <P Class="Guess-Left">Remaining Guesses: <Span></Span></P>
+          <P Class="Wrong-Letter">Wrong Letters: <Span></Span></P>
+        </Div>
+        <Button Class="Reset-Btn">Reset Game</Button>
+      </Div>
+    </Div>
+
+    <Script Src="Js/Words.Js"></Script>
+    <Script Src="Js/Script.Js"></Script>
+  </Body>
+</Html>

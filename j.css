@@ -1,0 +1,107 @@
+/* Import Google Font - Poppins */
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:wght@400;500;600&Display=Swap");
+* {
+  Margin: 0;
+  Padding: 0;
+  Box-Sizing: Border-Box;
+  Font-Family: "Poppins", Sans-Serif;
+}
+Body {
+  Display: Flex;
+  Padding: 0 10px;
+  Min-Height: 100vh;
+  Align-Items: Center;
+  Justify-Content: Center;
+  Background: #E2dcc8;
+}
+.Wrapper {
+  Width: 430px;
+  Background: #Fff;
+  Border-Radius: 10px;
+  Box-Shadow: 0 10px 25px Rgba(0, 0, 0, 0.1);
+}
+.Wrapper H1 {
+  Font-Size: 25px;
+  Font-Weight: 500;
+  Padding: 20px 25px;
+  Border-Bottom: 1px Solid #Ccc;
+}
+.Wrapper .Content {
+  Margin: 25px 25px 35px;
+}
+.Content .Inputs {
+  Display: Flex;
+  Flex-Wrap: Wrap;
+  Justify-Content: Center;
+}
+.Inputs Input {
+  Height: 57px;
+  Width: 56px;
+  Margin: 4px;
+  Font-Size: 24px;
+  Font-Weight: 500;
+  Color: #E2dcc8;
+  Text-Align: Center;
+  Border-Radius: 5px;
+  Background: None;
+  Pointer-Events: None;
+  Text-Transform: Uppercase;
+  Border: 1px Solid #B5b5b5;
+}
+.Typing-Input {
+  Opacity: 0;
+  Z-Index: -999;
+  Position: Absolute;
+  Pointer-Events: None;
+}
+.Inputs Input:first-Child {
+  Margin-Left: 0px;
+}
+.Content .Details {
+  Margin: 20px 0 25px;
+}
+.Details P {
+  Font-Size: 19px;
+  Margin-Bottom: 10px;
+}
+.Content .Reset-Btn {
+  Width: 100%;
+  Border: None;
+  Cursor: Pointer;
+  Color: #Fff;
+  Outline: None;
+  Padding: 15px 0;
+  Font-Size: 17px;
+  Border-Radius: 5px;
+  Background: #E2dcc8;
+  Transition: All 0.3s Ease;
+}
+.Content .Reset-Btn:hover {
+  Background: #E2dcc8;
+}
+
+@Media Screen And (Max-Width: 460px) {
+  .Wrapper {
+    Width: 100%;
+  }
+  .Wrapper H1 {
+    Font-Size: 22px;
+    Padding: 16px 20px;
+  }
+  .Wrapper .Content {
+    Margin: 25px 20px 35px;
+  }
+  .Inputs Input {
+    Height: 51px;
+    Width: 50px;
+    Margin: 3px;
+    Font-Size: 22px;
+  }
+  .Details P {
+    Font-Size: 17px;
+  }
+  .Content .Reset-Btn {
+    Padding: 14px 0;
+    Font-Size: 16px;
+  }
+}
